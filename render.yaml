@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bykart-bergen-api
+    runtime: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0

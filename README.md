@@ -68,6 +68,17 @@ docker compose up --build
 # Backend API: http://localhost:8000 (docs at /docs)
 ```
 
+## Deploy
+
+The application has two services: deploy the backend from `render.yaml` on
+Render, then deploy `frontend/` on Vercel. In Vercel, set the project root
+directory to `frontend` and add `NEXT_PUBLIC_API_URL` with the public Render
+service URL (without a trailing slash). Redeploy the frontend after saving the
+environment variable.
+
+The Render free instance may spin down while idle, so its first request after
+idle can take longer while the API starts.
+
 ## Tech stack
 
 | Layer  | Technology |
