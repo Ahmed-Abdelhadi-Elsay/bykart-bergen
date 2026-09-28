@@ -1,14 +1,18 @@
 {
-  "name": "transit-map",
-  "version": "0.1.0",
+  "name": "bykart-frontend",
+  "version": "0.2.0",
   "private": true,
+  "description": "Next.js frontend for the Bergen real-time transit dashboard (BYKART). Consumes the Python FastAPI backend.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "lucide-react": "^1.48.0",
+    "maplibre-gl": "^6.11.2",
     "next": "16.3.6",
     "react": "19.2.8",
     "react-dom": "19.2.8"
